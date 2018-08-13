@@ -2,12 +2,75 @@
 	body{
     	overflow-x:hidden;
 	}
+	.photo-m{
+		margin: 0px auto; 
+		width: 70%;
+	}
+	/*advisoy*/
+	.advisory-list{
+		color: #fff!important;
+    	background-color: #57768e!important;
+		max-height: 82px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+	.link-advisory{
+		color: #f8fafc;
+	}
+	.posted-advisory{
+		display: block;
+	    padding-bottom: 5px;
+	    padding-top: 9px;
+	    font-size: 12px;
+	    font-weight: bold;
+	   color: rgba(5, 6, 6, 0.49);
+	}
+
+	/*events*/
+	.event-list{
+		max-height: 82px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+	.bgcolor-event{
+		color: #fff!important;
+    	background-color: #57768e!important;
+	}
+	.link-event{
+		color: #f8fafc;
+	}
+	.posted-event{
+		display: block;
+	    padding-bottom: 5px;
+	    padding-top: 9px;
+	    font-size: 12px;
+	    font-weight: bold;
+	   color: rgba(5, 6, 6, 0.49);
+	}
+
 	/*news*/
+	.news-list{
+		max-height: 82px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    border-bottom: rgba(103, 88, 88, 0.27) solid 1px;
+	}
+	
 	.link-news{
-		color: white;
+		color: #0f7282;
+    	font-weight: bold;
+    	text-decoration: underline;
 	}
 	.link-news:hover{
-		color: white;
+		color: rgba(0, 0, 0, 0.62);
+	}
+	.seemore-news{ 
+		color: #d03e3e;
+    	font-weight: bold;
+	}
+	.seemore-news:hover{ 
+		color: black;
+    	font-weight: bold;
 	}
 	.posted-news{
 		display: block;
@@ -15,13 +78,17 @@
 	    padding-top: 9px;
 	    font-size: 12px;
 	    font-weight: bold;
-	    color: #e2dad0;
+	    color: rgba(212, 109, 119, 0.75);
 	}
 	.sgd-news{
-		background: linear-gradient(90deg, rgba(151, 108, 10, 0.53), rgb(255, 255, 255));
-    	padding: 11px;
-		/*background: linear-gradient(90deg, #9cbfdc, rgb(255, 255, 255));
-    	padding: 11px;*/
+	    max-height: 320px;
+	    min-height: 320px;
+	    background: linear-gradient(418deg, rgba(142, 164, 167, 0.38), rgb(255, 255, 255));
+	    padding: 11px;
+	    border-radius: 6px;
+	}
+	.sgd-news>h2{
+		font-size: 1.75rem;
 	}
 	.bgcolor-news{
 		color: #fff!important;
@@ -191,6 +258,9 @@
 	}
 	.page-name{
 		padding: 51px;
+	}
+	.photo-m{
+		width: 100%;
 	}
 }
 

@@ -16,13 +16,13 @@
     <div class="wrapper1">
     	<div class="container-fluid" style="margin-top: 15px;">
     		<div class="row">
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4">
 	    			@include('frontend.home._news')
 	            </div>  
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4">
 	    			@include('frontend.home._advisory')
 	    		</div>
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4">
 	    			@include('frontend.home._events')
 				</div>
     		</div>
