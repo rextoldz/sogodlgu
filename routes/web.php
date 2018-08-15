@@ -10,17 +10,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'Frontend\HomeController@index')->name('home');
-
-// Government
-Route::get('/Government/Keyofficials', 'Frontend\GovernmentController@index')->name('keyofficials');
-// Route::get('/government/keyofficials', 'Frontend\GovernmentController@')->name('keyofficials');
-
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
+Route::get('/', 'Frontend\HomeController@index')->name('home');
+
+Route::prefix('government')->group(function () {
+	Route::get('keyofficials', 'Frontend\GovernmentController@keyofficials')->name('keyofficials');
+	Route::get('offices', 'Frontend\GovernmentController@offices')->name('offices');
+	Route::get('barangay', 'Frontend\GovernmentController@barangay')->name('barangay');
+
+});
+
+Route::resource('/cruds', 'CrudsController', [
+  'except' => ['edit', 'show', 'store']
+]);
 Auth::routes();
 
 

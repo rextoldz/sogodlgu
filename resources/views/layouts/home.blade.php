@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ $title }}</title>
+    <link rel="shortcut icon" href="{{ asset('images/lgu.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -33,7 +34,7 @@
             <div class="row">
 
                 <div class="page-name">
-                    <h1>The official website of the Municipality of Sogod</h1>
+                    <h1>The official website of the Municipality of Sogod Southern Leyte</h1>
                   
                 </div>
                 <div class="follow">
@@ -77,13 +78,13 @@
                                     <a class="dropdown-item" href="{{ route('keyofficials') }}">
                                         {{ __('Key Officials') }}
                                     </a>
-                                   <!--  <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{ route('offices') }}">
                                         {{ __('Offices') }}
                                     </a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="{{ route('barangay') }}">
                                         {{ __('Barangay') }}
                                     </a>
-                                    <a class="dropdown-item" href="">
+                                   <!--  <a class="dropdown-item" href="">
                                         {{ __('Health') }}
                                     </a> -->
                                 </div>
@@ -134,10 +135,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="footer-rights">All rights reserved.</p>
-                </div>
-                <div class="col-md-4 text-right">
-                    sogod.gov.ph
+                    <p class="footer-rights">All rights reserved | sogod.gov.ph</p>
                 </div>
             </div>
         </div>

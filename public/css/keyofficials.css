@@ -9,7 +9,56 @@
     height: 200px;
     padding: 13px;
 }
+.photo-m{
+	margin: 0px auto; 
+	width: 90%;
+}
+.name>h1{
+    color: cadetblue;
+}
+.position>h1{
+	color: #ada192;
+    font-weight: 100;
+}
+.position-vm>h1{
+	color: #ada192;
+    font-weight: 100;
+}
+.sbmembers>h3{
+	font-weight: 500;
+    color: #b7b7a9;
+}
+.sbname>p{
+	padding-left: 1px;
+	padding-top: 6px;
+	font-size: 16px;
+	font-weight: bold;
+	color: cadetblue;
+}
+.page-title{
+	color: gray;
+	font-weight: 300;
+}
+.subtitle{
+	color: rgba(152, 141, 127, 0.9);
+}
 
+}
+@media only screen and (max-width: 768px){
+	/*government*/
+	.photo-m{
+		margin: 0px auto; 
+		width: 100%;
+	}
+	.name>h1{
+		font-size: 20px;
+	    color: cadetblue;
+	}
+	.position-vm>h1{
+		font-size: 30px;
+	    font-weight: 100;
+	}
+}
 
 /*
 .keyofficials{

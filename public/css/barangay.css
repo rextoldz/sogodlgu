@@ -1,0 +1,21 @@
+.page-title{
+	color: gray;
+	font-weight: 300;
+}
+.subtitle{
+	color: rgba(152, 141, 127, 0.9);
+}
+.barangay-name{
+	font-size: 20px;
+    font-weight: 600;
+    color: darkcyan;
+    background-color: #467d7808;
+    font-family: monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.info-title{
+    color: #808080db;
+    font-weight:500;
+}
