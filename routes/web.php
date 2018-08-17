@@ -22,10 +22,10 @@ Route::prefix('government')->group(function () {
 	Route::get('barangay', 'Frontend\GovernmentController@barangay')->name('barangay');
 
 });
+Route::prefix('advisories')->group(function () {
+	Route::get('/', 'Frontend\AdvisoriesController@index')->name('advisories');
+});
 
-Route::resource('/cruds', 'CrudsController', [
-  'except' => ['edit', 'show', 'store']
-]);
 Auth::routes();
 
 

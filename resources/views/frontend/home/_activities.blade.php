@@ -1,4 +1,4 @@
-<script type="text/javascript" src="{{ asset('js/slideshow1.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('js/slideshow1.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery.css') }}">
 
 <div class="w3-container">
@@ -42,4 +42,4 @@
           </a>
           <div class="desc">Add a description of the image here</div>
         </div>
-</div>
+</div> -->

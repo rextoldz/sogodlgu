@@ -69,7 +69,7 @@
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('HOME') }}</a>
                             </li>
                             <li class="v-divider"></li>
-                            <li class="nav-item dropdown" style="width: 140px;">
+                            <li class="nav-item dropdown" style="width: 111px;;">
                                 <a id="navbarDropdown" class="{{  $page == 'Government' ? 'active' : 'nav-link' }} nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ __('GOVERNMENT') }} <span class="caret"></span>
                                 </a>
@@ -141,11 +141,11 @@
         </div>
     </div>
 </footer>
-<!-- <script>(function(d, s, id) {
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
+}(document, 'script', 'facebook-jssdk'));</script>
 </html>
