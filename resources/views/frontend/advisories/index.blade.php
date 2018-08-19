@@ -2,7 +2,6 @@
 
 @section('content')
     <script type="text/javascript" src="{{ asset('js/date_time.js') }}"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/advisories.css') }}">
     <div class="wrapper">
         <div class="lgu-photo-small"></div>
         <div class="overlay-lgu-photo-small">
@@ -27,11 +26,12 @@
                     @include('frontend.advisories._list')
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                   
-                    <div class="w3-container"> 
-                        <h2>{{ _('Social Media') }}</h2>
-                        <div id="fb-root"></div>
-                        <div class="fb-page" data-href="https://www.facebook.com/SogodSo.Leyte/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/SogodSo.Leyte/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SogodSo.Leyte/">Sogod, Southern Leyte</a></blockquote></div>
+                   <div class="wrapper1">
+                        <div class="w3-container"> 
+                            <h2 class="sgd-roboto">{{ _('Social Media') }}</h2>
+                            <div id="fb-root"></div>
+                            <div class="fb-page" data-href="https://www.facebook.com/SogodSo.Leyte/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/SogodSo.Leyte/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SogodSo.Leyte/">Sogod, Southern Leyte</a></blockquote></div>
+                        </div>
                     </div>
                 </div>
             </div>

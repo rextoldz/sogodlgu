@@ -24,7 +24,14 @@ Route::prefix('government')->group(function () {
 });
 Route::prefix('advisories')->group(function () {
 	Route::get('/', 'Frontend\AdvisoriesController@index')->name('advisories');
+    Route::get('{id}/{title}', 'Frontend\AdvisoriesController@show');
 });
+Route::prefix('about')->group(function () {
+	Route::get('/', 'Frontend\AboutController@index')->name('about');
+});
+// Route::prefix('news')->group(function () {
+// 	Route::put('{id}/{title}', 'newsController@update');
+// });
 
 Auth::routes();
 

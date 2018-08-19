@@ -17,7 +17,7 @@
 	</div>
 	<div class="col-sm-3 col-md-3 col-lg-3">
 		<figure class="snip1527">
-			<div class="image" style="min-height: 324px;"><img src="{{ asset('images/Sogod_Municipality.gif') }}" alt="pr-sample25" /></div>
+			<div class="image" style="min-height: 324px;"><img src="{{ asset('images/sog.gif') }}" alt="pr-sample25" /></div>
 			<figcaption>
 			    <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
 			    <h3>Karaang sogod town hall</h3>

@@ -14,7 +14,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('bootstrap4/js/bootstrap.min.js') }}" defer></script>
-
+    <!-- <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script> -->
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -26,16 +26,15 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/post-news.css') }}">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}">
+    
 
 </head>
 <body>
-    <div  id="app">
-        <div class="container">
+    <div  id="app"></div>
+        <div class="container sgd-header">
             <div class="row">
-
                 <div class="page-name">
-                    <h1>The official website of the Municipality of Sogod Southern Leyte</h1>
-                  
+                    The official website of the Municipality of Sogod Southern Leyte
                 </div>
                 <div class="follow">
                     <a href="#" class="f fab fa-facebook"></a>
@@ -43,8 +42,7 @@
                     <a href="#" class="f fab fa-google"></a>
                 </div>
             </div>
-        </div> 
-        
+        </div>
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container-fluid">
                 <a class="navbar-brand site-logo" href="{{ url('/') }}">
@@ -69,7 +67,7 @@
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('HOME') }}</a>
                             </li>
                             <li class="v-divider"></li>
-                            <li class="nav-item dropdown" style="width: 111px;;">
+                            <li class="nav-item dropdown" style="width: 120px;">
                                 <a id="navbarDropdown" class="{{  $page == 'Government' ? 'active' : 'nav-link' }} nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ __('GOVERNMENT') }} <span class="caret"></span>
                                 </a>
@@ -82,11 +80,11 @@
                                         {{ __('Offices') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('barangay') }}">
-                                        {{ __('Barangay') }}
+                                        {{ __('Barangays') }}
                                     </a>
-                                   <!--  <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="">
                                         {{ __('Health') }}
-                                    </a> -->
+                                    </a>
                                 </div>
                             </li>
                             <li class="v-divider"></li>
@@ -99,7 +97,7 @@
                             </li> 
                             <li class="v-divider"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('home') }}">{{ __('ABOUT') }}</a>
+                                <a class="nav-link" href="{{ route('about') }}">{{ __('ABOUT') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
@@ -128,7 +126,7 @@
         <main class="py-6">
             @yield('content')
         </main>
-    </div>
+
 </body>
 <footer>
     <div class="wrapper-footer">

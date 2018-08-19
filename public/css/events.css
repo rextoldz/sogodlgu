@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 .sgd-events {
   background-color: #fefefe;
   box-sizing: border-box;
@@ -9,11 +12,6 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*.container-events {
-  margin: 50px auto 0;
-  width: 700px;
-}*/
 
 .u-float-right {
   float: right;
@@ -32,11 +30,10 @@
   color: #888;
   font-size: 12px;
 }
-
 .card-media {
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
-  height: 125px;
+  height: 90px;
   margin-bottom: 25px;
   transition: all 300ms ease-out;
   width: 100%;
@@ -172,7 +169,10 @@
 
 .card-media-body-heading {
   display: block;
-  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .card-media-body-supporting-bottom {

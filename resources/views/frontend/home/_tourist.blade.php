@@ -1,60 +1,64 @@
 <script type="text/javascript" src="{{ asset('js/slideshow1.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/slideshow1.css') }}">
+<div class="container-fluid">
+    <div class="row">
+          <div class="col-sm-3" style="width: 100%">
+            <img src="{{ asset('images/agas.jpg') }}" style="width: 100%;    height: 169px;margin-bottom: 21px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="col-sm-3" style="width: 100%">
+            <img src="{{ asset('images/nmr.jpg') }}" style="width: 100%;    height: 169px;margin-bottom: 21px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="col-sm-3" style="width: 100%">
+            <img src="{{ asset('images/glcf.jpg') }}" style="width: 100%;    height: 169px;margin-bottom: 21px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="col-sm-3" style="width: 100%">
+            <img src="{{ asset('images/sample.jpg') }}" style="width: 100%;    height: 169px;margin-bottom: 21px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+      </div>
+</div> 
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
 
-  <div class="mySlides" style="display: block;">
-    <div class="numbertext">1 / 6</div>
-    <img src="{{ asset('images/agas.jpg') }}" style="width:100%">
-  </div>
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="{{ asset('images/agas.jpg') }}" style="width:100%">
+        </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="{{ asset('images/nmr.jpg') }}" style="width:100%">
-  </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="{{ asset('images/nmr.jpg') }}" style="width:100%">
+        </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="{{ asset('images/glcf.jpg') }}" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="{{ asset('images/sample.jpg') }}" style="width:100%">
-  </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="{{ asset('images/glcf.jpg') }}" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="{{ asset('images/sample.jpg') }}" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="{{ asset('images/sample.jpg') }}" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="{{ asset('images/sample.jpg') }}" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
 
-  <div class="caption-container" style="display: block;">
-    <p id="caption">Agas-agas Brigde</p>
-  </div>
 
-<div class="w3-panel">
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/agas.jpg') }}" style="width:100%" onclick="currentSlide(1)" alt="Agas-agas Brigde">
-    </div>
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/nmr.jpg') }}" style="width:100%" onclick="currentSlide(2)" alt="Neguilan Mountain Resort">
-    </div>
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/glcf.jpg') }}" style="width:100%" onclick="currentSlide(3)" alt="Gerona's La Caridad Farm">
-    </div>
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/sample.jpg') }}" style="width:100%" onclick="currentSlide(4)" alt="Sogod Rizal Park">
-    </div>
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/sample.jpg') }}" style="width:100%" onclick="currentSlide(5)" alt="Sogod Rizal Park">
-    </div>    
-    <div class="column">
-        <img class="demo cursor" src="{{ asset('images/sample.jpg') }}" style="width:100%" onclick="currentSlide(6)" alt="Sogod Rizal Park">
-    </div>
+        <div class="column">
+          <img class="demo cursor" src="{{ asset('images/agas.jpg') }}" style="width:100%" onclick="currentSlide(1)" alt="Agas-agas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="{{ asset('images/nmr.jpg') }}" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="{{ asset('images/glcf.jpg') }}" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="{{ asset('images/sample.jpg') }}" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
 </div>

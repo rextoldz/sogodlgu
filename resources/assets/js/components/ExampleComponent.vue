@@ -5,8 +5,8 @@
                 <div class="card card-default">
                     <div class="card-header">Example Component</div>
 
-                    <div class="card-body">
-                        I'm an example component.
+                    <div class="card-body" style="color: green;">
+                        I'm an example component. {{ ang }}
                     </div>
                 </div>
             </div>
@@ -15,9 +15,14 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+  export default {
+    data () {
+      return {
+        ang: 'hello!'
+      }
+    },
+    created () {
+      this.ang = 'bye!'
     }
+  }
 </script>
