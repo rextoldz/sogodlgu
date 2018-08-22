@@ -1,11 +1,5 @@
   <div class="photo-m">
-        <div class="page-title sgd-roboto">
-            <h2>List of key officials</h2>
-        </div>
-        <div class="subtitle">
-            <p>Mayor, Vice-Mayor, SB members and SK Federation.</p>  
-        </div>
-        <hr>
+    
         <div class="w3-panel">
                 <img src="{{ asset('images/officials/mayor.jpg') }}" alt="Avatar" class="w3-left w3-margin-right" style="max-width: 120px;">   
                 <div class="position">

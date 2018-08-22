@@ -1,5 +1,3 @@
-<script type="text/javascript" src="{{ asset('js/slideshow1.js') }}"></script>
-<link rel="stylesheet" type="text/css" href="{{ asset('css/slideshow1.css') }}">
 <div class="container-fluid">
     <div class="row">
           <div class="col-sm-3" style="width: 100%">
