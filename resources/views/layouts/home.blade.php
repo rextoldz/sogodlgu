@@ -70,7 +70,7 @@
                                             {{ __('GOVERNMENT') }} <span class="caret"></span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('keyofficials') }}">
+                                          <!--   <a class="dropdown-item" href="{{ route('keyofficials') }}">
                                                 {{ __('Key Officials') }}
                                             </a>
                                             <a class="dropdown-item" href="{{ route('offices') }}">
@@ -81,7 +81,7 @@
                                             </a>
                                             <a class="dropdown-item" href="">
                                                 {{ __('Health') }}
-                                            </a>
+                                            </a> -->
                                         </div>
                                     </li>
                                     <li class="nav-item">
