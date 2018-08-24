@@ -1,6 +1,6 @@
 #main-nav, .top-bar, .top-bar ul li, .sticky{height:3.625rem; background: #f7f7f7; padding:0; margin:0;}
 #govph h1{font-size:1.1875rem; font-weight:normal; margin:0; padding:0;}
-#govph h1 a{padding:1rem 1rem 1rem 0;}
+#govph h1 a{padding:1rem}
 
 .is-submenu-parent-item{font-weight: bold; border-bottom:solid .025rem #ccc;}
 .title-bar{background-color: #f7f7f7; color:#000; border-bottom:solid 1px #e9e9e9; padding:10px;}

@@ -1,0 +1,54 @@
+.logo-text {
+	display: inline-block;
+    position: relative;
+    top: 38px;
+    right: 19px;
+}
+.masthead-bg{
+	background-image: url(/images/lgu-bw.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 315px;
+}
+.banner-top{
+    background-image: url(/images/sample.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    padding: 96px 0px 246px 0px;
+}
+
+.logo-text > p{
+	line-height: 8px;
+}
+.logo-text > p._1{
+	font-family: fantasy;
+    font-size: 22px;
+    color: #b7641e;
+}
+.logo-text > p._2{
+	font-family: initial;
+    font-size: 40px;
+}
+.logo-text > p._3{
+	padding-top: 3px;
+}
+.logo-text > hr._hr{
+	border-bottom: 4px solid #a47b104a;
+}
+.transparency > h4{
+	font-size: 16px;
+}
+#logo{
+	width: auto;
+}
+.welcome-msg{
+	text-align: justify;
+}
+.w-msg-header{
+    color: #2285a2;
+    font-weight: bold;
+}
+#banner{
+    margin-bottom: 50px;
+}

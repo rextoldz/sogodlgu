@@ -19,22 +19,29 @@
                     <div id="gwt-menu" class="top-bar">
                         <nav class="top-bar-left">
                             <ul class="dropdown menu" data-dropdown-menu>
-                                <li id="govph" class="name menu-text"><h1><a href="http://www.gov.ph">GOVPH</a></h1></li>
+                                <li id="govph" class="name menu-text" role="menuitem"><h1><a target="_blank" href="http://www.gov.ph">GOVPH</a></h1></li>
                                 <li><a href="#">Home</a></li>
+                                <li>
+                                    <a href="#">Government</a>
+                                    <ul class="vertical menu">
+                                        <li><a href="#">Key officials</a></li>
+                                        <li><a href="#">Offices</a></li>
+                                        <li><a href="#">Barangays</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <a href="#">Transparency</a>
                                     <ul class="vertical menu">
-                                        <li><a href="#">Link 1</a></li>
-                                        <li><a href="#">Link 2</a></li>
-                                        <li><a href="#">Link 3</a></li>
+                                        <li><a href="#">Citizen's Charter</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Left Nav Button</a></li>
+                                <li><a href="#">Tourism</a></li>
+                                <li><a href="#">About</a></li>
                             </ul>
                         </nav>
                         <nav class="top-bar-right">
                             <ul class="dropdown menu" data-dropdown-menu>
-                                <li class="active">
+                             <!--    <li class="active">
                                     <a href="#">Right Button Active</a>
                                 </li>
                                 <li>
@@ -44,7 +51,7 @@
                                         <li><a href="#">2nd link in dropdown</a></li>
                                         <li><a href="#">3rd link in dropdown</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li>
                                     <button id="acc-button" type="button">
                                         <span class="show-for-sr">Accessibility Button</span>
