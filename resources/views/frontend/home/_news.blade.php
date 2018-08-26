@@ -1,9 +1,10 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home/news.css') }}">
 <script type="text/javascript" src="{{ asset('js/news.js') }}"></script>
 
-<div class="container">
-<h3 class="text-center">Featured<small>news</small></h3>
 <hr>
+<div class="container">
+<h5>Featured<small>news</small></h5>
+<br>
 <div class="row">
 	<div class="col-sm-12 col-md-6 col-lg-6  py-0 pl-3 pr-1 featcard">
 	   <div id="featured" class="carousel slide carousel-fade" data-ride="carousel">
@@ -15,27 +16,25 @@
 		          <a href="http://gerbong.id/review-gsp-amerika-ingin-perdagangan-saling-menguntungkan" class="align-self-end">
 		        	<span class="badge">Ekspor</span> 
 		            <h4 class="card-title">Review GSP: Amerika Ingin Perdagangan Saling Menguntungkan</h4>
-		            <p class="textfeat" style="display: none;">Gerbong.id – Duta Besar Amerika Serikat untuk Indonesia Joseph R. Donovan menegaskan, langkah pemerintah Amerika Serikat meninjau ulang pemberian Generalized System od Preferenes (GSP) akan menguntungkan kedua belah pihak.
-
-Menurut Donovan,</p>
+		            <p class="textfeat" style="display: none;">Gerbong.id – Duta Besar Amerika Serikat untuk Indonesia Joseph R. Donovan menegaskan, langkah pemerintah Amerika Serikat meninjau ulang pemberian Generalized System od Preferenes (GSP) akan menguntungkan kedua belah pihak.Menurut Donovan,</p>
 		          </a>
 		        </div>
 		      </div>
 	  		</div>
-	  	<div class="carousel-item">			  <div class="card bg-dark text-white">
+	  	<div class="carousel-item">			  
+	  		<div class="card bg-dark text-white">
 		        <img class="card-img img-fluid" src="http://admin.gerbong.id/media/post_img_sm/dpr-setujui-penambahan-anggaran-bp-batam-rp565-miliar-1531258457.jpeg" alt="">
 		        <div class="card-img-overlay d-flex linkfeat">
 		          <a href="http://gerbong.id/dpr-setujui-penambahan-anggaran-bp-batam-rp565-miliar" class="align-self-end">
 		        	<span class="badge">Pertumbuhan Ekonomi</span> 
 		            <h4 class="card-title">DPR Setujui Penambahan Anggaran BP Batam Rp565 Miliar</h4>
-		            <p class="textfeat" style="display: none;">Gerbong.id - Dewan Perwakilan Rakyat (DPR) menyetujui penambahan anggaran Badan Pengusahaan (BP) Batam Rp565 miliar. Dengan penambahan anggaran di tahun 2019 tersebut diharapkan dapat mendorong percepatan pembangunan Kota Batam.
-
-Anggota Komisi</p>
+		            <p class="textfeat" style="display: none;">Gerbong.id - Dewan Perwakilan Rakyat (DPR) menyetujui penambahan anggaran Badan Pengusahaan (BP) Batam Rp565 miliar. Dengan penambahan anggaran di tahun 2019 tersebut diharapkan dapat mendorong percepatan pembangunan Kota Batam.Anggota Komisi</p>
 		          </a>
 		        </div>
 		      </div>
 	  		</div>
-	  	<div class="carousel-item">			  <div class="card bg-dark text-white">
+	  	<div class="carousel-item">
+	  		<div class="card bg-dark text-white">
 		        <img class="card-img img-fluid" src="http://admin.gerbong.id/media/post_img_sm/btn-targetkan-seribu-nasabah-valas-di-batam-1531227805.jpeg" alt="">
 		        <div class="card-img-overlay d-flex linkfeat">
 		          <a href="http://gerbong.id/btn-targetkan-seribu-nasabah-valas-di-batam" class="align-self-end">
@@ -46,7 +45,8 @@ Anggota Komisi</p>
 		        </div>
 		      </div>
 	  		</div>
-	  	<div class="carousel-item">			  <div class="card bg-dark text-white">
+	  	<div class="carousel-item">			  
+	  		<div class="card bg-dark text-white">
 		        <img class="card-img img-fluid" src="http://admin.gerbong.id/media/post_img_sm/sistem-oss-resmi-diluncurkan-1531225964.jpg" alt="">
 		        <div class="card-img-overlay d-flex linkfeat">
 		          <a href="http://gerbong.id/sistem-oss-resmi-diluncurkan" class="align-self-end">
@@ -58,7 +58,6 @@ Anggota Komisi</p>
 		      </div>
 	  		</div>
 	  	<div class="carousel-item">			  
-
 	  		<div class="card bg-dark text-white">
 		        <img class="card-img img-fluid" src="http://admin.gerbong.id/media/post_img_sm/grab-gandeng-samsung-telkomsel-dan-erafone-1531222875.JPG" alt="">
 		        <div class="card-img-overlay d-flex linkfeat">
@@ -133,4 +132,5 @@ Anggota Komisi</p>
 			</div>
 		</div>
 	</div>
+</div>
 </div>

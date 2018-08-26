@@ -1,17 +1,47 @@
-<div class="w3-card-1">
-	<header class="w3-container w3-lightorange">
-	  <p class="featured-header"><i class="fas fa-calendar"></i> {{ __('Events') }}</p>
-	</header>
-	<div class="w3-container featured-advisory">
-		<img src="{{ asset('images/events/farm.jpg') }}">
-		<a href="">Sogod Abaca Farmers Meeting</a>
-  		<p>Date Posted: Aug 30, 2018 10:40:04 PM</p>
-	  	<hr style="margin-bottom: 0rem;">
-	</div>
-	<div class="w3-container featured-advisory">
-		<img src="{{ asset('images/events/anniv.png') }}">
-		<a href="">Sogod anniversary</a>
-  		<p>Date Posted: Aug 30, 2018 10:40:04 PM</p>
-	  	<hr style="margin-bottom: 0rem;">
-	</div>
+<h5>Upcoming<small>Events</small></h5>
+<br>
+<div class="row">
+    <div class="gallery">
+      <a target="_blank" href="fjords.jpg">
+        <img src="{{ asset('images/events/anniv.png') }}" alt="Cinque Terre">
+      	<h7 class="event-title">Sogod Founding Anniversary Concert</h7>
+      	<div style="margin-top:10px">
+      		<span class="event-date">July 10 2018</span>
+      		<span class="event-venue">Covert Court Sogod Southern Leyte</span>
+      	</div>
+      </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="forest.jpg">
+    	<img src="{{ asset('images/events/anniv.png') }}" alt="Cinque Terre">
+      	<h7 class="event-title">Sogod Founding Anniversary Concert</h7>
+      	<div style="margin-top:10px">
+      		<span class="event-date">July 10 2018</span>
+      		<span class="event-venue">Covert Court Sogod Southern Leyte</span>
+      	</div>
+      </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="lights.jpg">
+        <img src="{{ asset('images/events/anniv.png') }}" alt="Cinque Terre">
+      	<h7 class="event-title">Sogod Founding Anniversary Concert</h7>
+      	<div style="margin-top:10px">
+      		<span class="event-date">July 10 2018</span>
+      		<span class="event-venue">Covert Court Sogod Southern Leyte</span>
+      	</div>
+      </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="mountains.jpg">
+        <img src="{{ asset('images/events/anniv.png') }}" alt="Cinque Terre">
+      	<h7 class="event-title">Sogod Founding Anniversary Concert</h7>
+      	<div style="margin-top:10px">
+      		<span class="event-date">July 10 2018</span>
+      		<span class="event-venue">Covert Court Sogod Southern Leyte</span>
+      	</div>
+      </a>
+    </div>
 </div>

@@ -207,3 +207,15 @@ line-height: 58px;
 	.top-bar li{
 		border: 0;
 	}
+	
+	/*new*/
+	.pst {
+	    width: 276px;
+	    position: relative;
+	    right: -12px;
+	    top: -9px;
+	}
+	div.gallery {
+		min-width: 320px;
+	}
+}

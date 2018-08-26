@@ -8,7 +8,7 @@ $(document).ready(function(){
         }
     );
 });
-$(".demo1").bootstrapNews({
+$(".advisory").bootstrapNews({
     newsPerPage: 3,
     autoplay: true,
 	pauseOnHover:true,

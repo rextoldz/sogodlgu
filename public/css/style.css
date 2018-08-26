@@ -1,21 +1,34 @@
+.downloads-link{
+    color: darkblue;
+}
+
 .logo-text {
 	display: inline-block;
     position: relative;
     top: 38px;
-    right: 19px;
+    right: 27px;
 }
-.masthead-bg{
-	background-image: url(/images/lgu-bw.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 315px;
+.tourist-text{
+    width: 100%;
+    height: 57px;
+    background-color: #00000073;
+    position: relative;
+    bottom: 59px;
+    color: white;
+    padding: 16px;
+    font-size: medium;
+    font-weight: 600;
+    font-family: -webkit-pictograph;
+    text-transform: uppercase;
 }
+
 .banner-top{
     background-image: url(/images/sample.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    padding: 96px 0px 246px 0px;
+    padding: 96px 0px 320px 0px;
+    border-bottom: #e2ac46 solid 18px;
 }
 
 .logo-text > p{
@@ -51,4 +64,10 @@
 }
 #banner{
     margin-bottom: 50px;
+}
+.pst{
+    width: 239px;
+    position: absolute;
+    right: 0;
+    top: 27px;
 }

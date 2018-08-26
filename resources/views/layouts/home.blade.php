@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ $title }}</title>
+        <link rel="icon" href="{{ asset('images/lgu.png') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap-theme.min') }}"/>
         <link rel="stylesheet" href="{{ asset('css/w3.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/foundation/foundation.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/foundation/app.css') }}" />
@@ -39,21 +39,19 @@
 
 <!-- masthead -->
     <div id="masthead" class="masthead-bg">
-      <div class="row">
-        <div id="logo" class="large-6 medium-6 columns">
-            <img src="{{ asset('images/logo.png') }}" style="width: 128px; margin: 33px">
-            <div class="logo-text">
-                <p class="_1">Republic of the Philippines</p>
-                <hr class="_hr">
-                <p class="_2">Municipality of Sogod</p>
-                <p class="_3">Province Southern Leyte</p>
+        <div class="container-fluid" style="border-bottom: #ea5211 solid 9px;">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="logo">  
+                    <img src="{{ asset('images/logo/logo.png') }}" style="width: 460px">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="pst">
+                    @include('frontend.widgets._datetime')
+                </div>
             </div>
         </div>
-        <div id="ear-left" class="large-3 medium-3 columns"></div>
-        <div id="ear-right" class="large-3 medium-3 columns">
-            @include('frontend.widgets._datetime')
-        </div>
-      </div>
     </div>
 <!-- masthead end -->
 <!--     <div class="container-banner banner-pads">
@@ -71,18 +69,12 @@
 
 <!-- main -->
     <div id="main-content">
-        <div class="container-fluid">
-            @yield('content')                            
-        </div>
+            @yield('content')
     </div>
 
 <!-- main end -->
 
 <!--Standard Footer-->
-<div id="news" style="margin-top:50px">
-    @include('frontend.home._news')
-</div>
-
 <div id="gwt-standard-footer" style="margin-top: 30px"></div>
 
 <div><a href="#main-nav" id="back-to-top" title="Back to Top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>

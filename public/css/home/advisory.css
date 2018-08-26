@@ -22,7 +22,16 @@
 
 .news-item
 {
-    padding:4px 4px;
+    padding:2px 2px;
     margin:0px;
-    border-bottom:1px dotted #555; 
+    border-bottom:1px dotted #555;
+    height: 130px;
+}
+.news-item a {
+	color: #b02b38;
+  	text-align: justify;
+	/*text-decoration: underline;*/
+}
+.news-item a:hover {
+	color: #b02b38;
 }
