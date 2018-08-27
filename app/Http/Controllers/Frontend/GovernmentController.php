@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Barangay;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Barangay;
+use Faker\Generator;
 
 class GovernmentController extends Controller
 {
@@ -29,16 +31,25 @@ class GovernmentController extends Controller
         	'breadcrumb' => 'Offices',
         ]);
     }
-    public function barangay()
+    public function barangay(Generator $faker)
     {
+            // $crud = new Barangay();
+            // $crud->name =$faker->lexify('????????');
+            // $crud->captain = $faker->lexify('????????');
+            // $crud->cellnumber = $faker->lexify('????????');
+            // $crud->telnumber = $faker->lexify('????????');
+            // $crud->save();
 
-    	$barangays = Barangay::paginate(5);
-
+            $barangays = Barangay::paginate(10);
         return view('frontend/government/barangay',[
         	'page' => 'Government',
         	'title' =>'Government | Barangay',
         	'breadcrumb' => 'Barangay',
         	'barangays' => $barangays,
         ]);
+    }
+    public function viewbarangay(Request $request)
+    {
+        
     }
 }

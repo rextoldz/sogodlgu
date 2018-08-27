@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/>  
         <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
+   <!--      <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script> -->
 
   </head>
 
@@ -39,7 +39,7 @@
 
 <!-- masthead -->
     <div id="masthead" class="masthead-bg">
-        <div class="container-fluid" style="border-bottom: #ea5211 solid 9px;">
+        <div class="container-fluid" style="border-bottom: #db910ab3 solid 9px;">
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="logo">  
@@ -104,6 +104,4 @@
     <script>
       $(document).foundation();
     </script>
-
-    </body>
 </html>

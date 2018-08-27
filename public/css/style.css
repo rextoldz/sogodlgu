@@ -70,11 +70,30 @@
     font-weight: bold;
 }
 #banner{
-    margin-bottom: 50px;
+    margin-bottom: 14px;
 }
 .pst{
     width: 239px;
     position: absolute;
     right: 0;
     top: 27px;
+}
+.keyofficials-card{
+    display: inline-block;
+}
+.keyofficials-card> p{
+    line-height: 7px;
+}
+.keyofficials-img{
+    max-width: 110px;
+    min-width: 114px;
+    position: relative;
+    bottom: 54px;
+}
+._Keyright{
+    margin-left: 132px;
+}
+.w3-red-dark{
+    background-color: #c7c7c7;
+    color: #605b5b;
 }

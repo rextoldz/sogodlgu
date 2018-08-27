@@ -2,7 +2,6 @@
 
 @section('content')
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
-
 <br>
 <div class="container-fluid">    
 	<div class="row">

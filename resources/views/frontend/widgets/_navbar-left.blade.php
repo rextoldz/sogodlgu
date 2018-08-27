@@ -20,13 +20,13 @@
                         <nav class="top-bar-left">
                             <ul class="dropdown menu" data-dropdown-menu>
                                 <li id="govph" class="name menu-text" role="menuitem"><h1><a target="_blank" href="http://www.gov.ph">GOVPH</a></h1></li>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="{{ route('home') }}">Home</a></li>
                                 <li>
                                     <a href="#">Government</a>
                                     <ul class="vertical menu">
-                                        <li><a href="#">Key officials</a></li>
+                                        <li><a href="{{ route('keyofficials') }}">Key officials</a></li>
                                         <li><a href="#">Offices</a></li>
-                                        <li><a href="#">Barangays</a></li>
+                                        <li><a href="{{ route('barangay') }}">Barangays</a></li>
                                     </ul>
                                 </li>
                                 <li>

@@ -218,4 +218,11 @@ line-height: 58px;
 	div.gallery {
 		min-width: 320px;
 	}
+	.keyofficials-img {
+	    position: relative;
+	    bottom: 3px;
+	}
+	._Keyright{
+		margin-left: 0px;
+	}
 }

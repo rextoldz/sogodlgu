@@ -20,7 +20,7 @@ Route::prefix('government')->group(function () {
 	Route::get('keyofficials', 'Frontend\GovernmentController@keyofficials')->name('keyofficials');
 	Route::get('offices', 'Frontend\GovernmentController@offices')->name('offices');
 	Route::get('barangay', 'Frontend\GovernmentController@barangay')->name('barangay');
-
+Route::get('/government/barangay/{id}', 'Frontend\GovernmentController@viewbarangay');
 });
 Route::prefix('advisories')->group(function () {
 	Route::get('/', 'Frontend\AdvisoriesController@index')->name('advisories');

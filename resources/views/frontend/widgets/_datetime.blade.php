@@ -1,5 +1,5 @@
 <br>
-<div Class="callout secondary">
+<div class="callout secondary" style="border: 1px solid rgba(255, 255, 255, 0.25);">
      <div id="pst" class="text-center">
         <div id="pst-container" style="display:block;">
             <div style="font-style:Roboto; color:#333;">

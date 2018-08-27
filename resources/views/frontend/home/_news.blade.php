@@ -1,6 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home/news.css') }}">
 <script type="text/javascript" src="{{ asset('js/news.js') }}"></script>
-
 <hr>
 <div class="container">
 <h5>Featured<small>news</small></h5>
