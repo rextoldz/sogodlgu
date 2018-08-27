@@ -1,7 +1,14 @@
 .downloads-link{
     color: darkblue;
 }
-
+.more-link{
+    position: relative;
+    left: 40px;
+    font-family: -webkit-pictograph;
+    color: #bf4e4e;
+    font-weight: 600;
+    text-decoration: underline;
+}
 .logo-text {
 	display: inline-block;
     position: relative;
@@ -23,7 +30,7 @@
 }
 
 .banner-top{
-    background-image: url(/images/sample.jpg);
+    background-image: url(/images/tourist/sample.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;

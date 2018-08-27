@@ -1,10 +1,9 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home/advisory.css') }}">
 
+<h6>Latest<small>Announcements</small></h6>
 <div class="w3-container">
 	<div class="panel panel-default">
-		<div class="panel-heading"> 
-			<b>ADVISORY</b>
-		</div>
+	
 		<div class="panel-body">
 			<div class="row">
 				<div class="col-xs-12">
@@ -115,17 +114,4 @@
 		</div> -->
 	</div>
 </div>
-<div class="w3-panel">
-	<div class="w3-card">
-		<p>DOWNLOADS</p>
-	</div>
-	<ul>
-		<li><a class="downloads-link" href="">Citizen's Charter.pdf</a></li>
-		<li><a class="downloads-link"  href="">CSC Application form.pdf</a></li>
-		<li><a class="downloads-link"  href="">form1.pdf</a></li>
-		<li><a class="downloads-link"  href="">form1.pdf</a></li>
-		<li><a class="downloads-link"  href="">form1.pdf</a></li>
-		<li><a class="downloads-link"  href="">form1.pdf</a></li>
-		<li><a class="downloads-link"  href="">form1.pdf</a></li>
-	</ul>
-</div>
+@include('frontend.home._events') 

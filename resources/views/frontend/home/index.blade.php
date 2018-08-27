@@ -21,10 +21,6 @@
     	</div>
 	</div>
 </div>
-<hr>
-<div class="container">
-    @include('frontend.home._events') 
-</div>
 <div id="news" style="margin-top:50px">
     @include('frontend.home._news')
 </div>
