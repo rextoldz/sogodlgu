@@ -20,7 +20,7 @@ Route::prefix('government')->group(function () {
 	Route::get('keyofficials', 'Frontend\GovernmentController@keyofficials')->name('keyofficials');
 	Route::get('offices', 'Frontend\GovernmentController@offices')->name('offices');
 	Route::get('barangay', 'Frontend\GovernmentController@barangay')->name('barangay');
-Route::get('/government/barangay/{id}', 'Frontend\GovernmentController@viewbarangay');
+	Route::get('barangay/{id}/{barangay}', 'Frontend\GovernmentController@showbarangay')->name('showbarangay');
 });
 Route::prefix('advisories')->group(function () {
 	Route::get('/', 'Frontend\AdvisoriesController@index')->name('advisories');
@@ -32,7 +32,6 @@ Route::prefix('about')->group(function () {
 // Route::prefix('news')->group(function () {
 // 	Route::put('{id}/{title}', 'newsController@update');
 // });
-
 Auth::routes();
 
 

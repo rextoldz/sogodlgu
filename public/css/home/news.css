@@ -5,6 +5,12 @@ a:hover{
 a, a:focus , a:hover{ 
 	text-decoration: none;
 }
+.carousel-item  a{
+	color: inherit;
+}
+.card a{
+	color: inherit;
+}
  a:hover, .btn{
 	outline:none!important;
 }

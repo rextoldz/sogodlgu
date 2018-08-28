@@ -2,11 +2,11 @@
 
 @section('content')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
-<div class="container-fluid sgd-breadcrumb">
+<div class="container-fluid">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+     <ol class="breadcrumb">
             <li class="breadcrumb-item">{{ $page }}</li>
-            <li class="breadcrumb-item"><a href="{{ route('keyofficials') }}">{{ $breadcrumb }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ url()->current() }}">{{ $breadcrumb }}</a></li>
         </ol>
     </nav>
 </div>

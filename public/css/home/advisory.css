@@ -25,8 +25,14 @@
     padding:2px 2px;
     margin:0px;
     border-bottom:1px dotted #555;
-    height: 130px;
+    height: 108px;
 }
+.news-item span
+{
+    font-size: 12px;
+    color: #969494;
+}
+ 
 .news-item a {
 	color: #b02b38;
   	text-align: justify;

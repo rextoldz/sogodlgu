@@ -40,7 +40,8 @@ class GovernmentController extends Controller
             // $crud->telnumber = $faker->lexify('????????');
             // $crud->save();
 
-            $barangays = Barangay::paginate(10);
+            $barangays = Barangay::paginate(15);
+
         return view('frontend/government/barangay',[
         	'page' => 'Government',
         	'title' =>'Government | Barangay',
@@ -48,8 +49,14 @@ class GovernmentController extends Controller
         	'barangays' => $barangays,
         ]);
     }
-    public function viewbarangay(Request $request)
+    public function showbarangay(Request $request)
     {
-        
+        $barangays = Barangay::where('id',$request->id)->first();
+        return view('frontend/government/_showbarangay',[
+            'page' => 'Government',
+            'title' =>'Government | Barangay',
+            'breadcrumb' => 'Barangay',
+            'barangay' => $barangays,
+        ]);
     }
 }

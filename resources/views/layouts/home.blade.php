@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/>  
         <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script>
-   <!--      <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script> -->
+        <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
 
   </head>
 
@@ -54,7 +54,7 @@
         </div>
     </div>
 <!-- masthead end -->
-<!--     <div class="container-banner banner-pads">
+<!--<div class="container-banner banner-pads">
         <div class="row">
             <div class="large-9 columns container-main">
                 <header>
