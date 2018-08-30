@@ -22,16 +22,22 @@ Route::prefix('government')->group(function () {
 	Route::get('barangay', 'Frontend\GovernmentController@barangay')->name('barangay');
 	Route::get('barangay/{id}/{barangay}', 'Frontend\GovernmentController@showbarangay')->name('showbarangay');
 });
+
 Route::prefix('advisories')->group(function () {
 	Route::get('/', 'Frontend\AdvisoriesController@index')->name('advisories');
     Route::get('{id}/{title}', 'Frontend\AdvisoriesController@show');
 });
+
 Route::prefix('about')->group(function () {
 	Route::get('/', 'Frontend\AboutController@index')->name('about');
+});
+
+Route::prefix('events')->group(function () {
+    Route::get('/', 'Frontend\EventsController@index')->name('events');
 });
 // Route::prefix('news')->group(function () {
 // 	Route::put('{id}/{title}', 'newsController@update');
 // });
 Auth::routes();
 
-
+Route::get('admin', 'Admin\DashboardController@index')->middleware('admin');

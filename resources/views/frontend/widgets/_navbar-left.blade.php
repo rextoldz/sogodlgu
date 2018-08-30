@@ -25,7 +25,7 @@
                                     <a href="#">Government</a>
                                     <ul class="vertical menu">
                                         <li><a href="{{ route('keyofficials') }}">Key officials</a></li>
-                                        <li><a href="#">Offices</a></li>
+                                        <li><a href="{{ route('offices') }}">Offices</a></li>
                                         <li><a href="{{ route('barangay') }}">Barangays</a></li>
                                     </ul>
                                 </li>

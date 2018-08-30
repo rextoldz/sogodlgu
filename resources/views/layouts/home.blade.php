@@ -3,6 +3,8 @@
   <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <title>{{ $title }}</title>
         <link rel="icon" href="{{ asset('images/lgu.png') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}"/>
@@ -14,11 +16,12 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/style2.css') }}"/>  
 
-        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/>  
+        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/> 
+         <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>  
         <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
+        <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script> 
 
+        <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
   </head>
 
 <body>
@@ -27,7 +30,7 @@
     @include('frontend.widgets._accessibility')
 
 <!-- Start of Off Canvas -->
-<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper"  id="app">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
 <!-- Off Canvas Menu -->
@@ -43,7 +46,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="logo">  
-                    <img src="{{ asset('images/logo/logo.png') }}" style="width: 460px">
+                    <img src="{{ asset('images/logo/logo.png') }}" style="width: 438px">
                 </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6">
@@ -83,6 +86,7 @@
       </div><!-- off-canvas-content -->
     </div><!-- off-canvas-wrapper-inner -->
   </div><!-- off-canvas-wrapper -->
+</div>
 
     <script type="text/javascript">
     (function(d, s, id) {
@@ -100,8 +104,10 @@
     <script src="{{ asset('js/foundation/vendor/foundation.min.js') }}"></script>
     <script src="{{ asset('js/foundation/vendor/what-input.js') }}"></script>
     <script src="{{ asset('js/theme.js') }}"></script>
-
-    <script>
+  <!--   <script>
       $(document).foundation();
-    </script>
+    </script> -->
+
+</body>
+  
 </html>

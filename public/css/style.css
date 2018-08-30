@@ -3,7 +3,7 @@
 }
 .more-link{
     position: relative;
-    left: 40px;
+    left: 44px;
     font-family: -webkit-pictograph;
     color: #bf4e4e;
     font-weight: 600;
@@ -14,6 +14,12 @@
     position: relative;
     top: 38px;
     right: 27px;
+}
+.mayors-image1{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
 .tourist-text{
     width: 100%;

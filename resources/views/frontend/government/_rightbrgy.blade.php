@@ -9,3 +9,6 @@
 		@include('frontend.widgets._announcement')
 	</div>
 </div>
+<div class="w3-container">
+	@include('frontend.widgets._seal')
+</div>

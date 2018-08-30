@@ -25,6 +25,7 @@ class GovernmentController extends Controller
     }
     public function offices()
     {
+        
         return view('frontend/government/offices',[
         	'page' => 'Government',
         	'title' =>'Government | Offices',
@@ -58,5 +59,9 @@ class GovernmentController extends Controller
             'breadcrumb' => 'Barangay',
             'barangay' => $barangays,
         ]);
+    }
+    public function listbarangay(Request $request)
+    {
+        return Barangay::get();;
     }
 }

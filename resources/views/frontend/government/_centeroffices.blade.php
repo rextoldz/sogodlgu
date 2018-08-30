@@ -1,22 +1,21 @@
-<link rel="stylesheet" type="text/css" href="{{ asset('css/home/events.css') }}">
 <div class="callout secondary">
-	<h5>45<small>Barangays</small></h5>
+	<h5>List of<small>Offices</small></h5>
 	@include('frontend.widgets._sharethis')		
 	<hr>
     <div class="w3-container">
-         <table class="w3-table w3-striped" style="overflow-x: auto;">
+         <table class="w3-table w3-striped table" style="overflow-x: auto;">
                 <tr>
-                  <th>Name of Barangay</th>
-                  <th>Barangay Captain</th>
-                  <th>Contact number</th>
+                  <th>Offices</th>
+                  <th>Office Head</th>
+                  <th>Telephone number</th>
                 </tr>
-                @foreach ($barangays as $barangay)
+               
                 <tr>
-                  <td><a target="_blank" href="{{ route('showbarangay',['id'=>$barangay->id, 'barangay' => $barangay->name]) }}">{{ $barangay->name }}</a></td>
-                  <td>{{ $barangay->captain }}</td>
-                  <td>{{ $barangay->cellnumber }}</td>
+                  <td><a target="_blank" href="{{ route('showbarangay',['id'=>$barangay->id, 'barangay' => $barangay->name]) }}"></a></td>
+                  <td></td>
+                  <td></td>
                 </tr>
-                @endforeach
+
         </table>
         <div class="w3-right">
             {{ $barangays->links('vendor.pagination.bootstrap-4') }}

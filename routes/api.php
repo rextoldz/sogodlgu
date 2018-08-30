@@ -20,3 +20,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('/cruds', 'CrudsController', [
   'except' => ['edit', 'show', 'store']
 ]);
+
+Route::resource('/barangay', 'Frontend\BarangayController', [
+  'except' => ['edit', 'show', 'store']
+]);
+
+Route::resource('/events', 'Frontend\EventsController', [
+  'except' => ['edit', 'show', 'store']
+]);
+
+Route::resource('/announcements', 'Frontend\AnnouncementsController', [
+  'except' => ['edit', 'show', 'store']
+]);

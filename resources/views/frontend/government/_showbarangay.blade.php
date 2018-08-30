@@ -54,8 +54,8 @@
                         <p>
                             <ul style="list-style: none;">
                                 <li><b>Captain: </b> {{ $barangay->captain }}</li>
-                                <li><b>Mobile no.: </b> {{ $barangay->cellnumber }}</li>
                                 <li><b>Telephone no.: </b> {{ $barangay->telnumber }}</li>
+                                <li><b>Mobile no.: </b> {{ $barangay->cellnumber }}</li>
                             </ul>
                         </p>
                         <!-- <p>

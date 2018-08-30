@@ -19,7 +19,7 @@
 		          </a>
 		        </div>
 		      </div>
-	  		</div>
+</div>
 	  	<div class="carousel-item">			  
 	  		<div class="card bg-dark text-white">
 		        <img class="card-img img-fluid" src="http://admin.gerbong.id/media/post_img_sm/dpr-setujui-penambahan-anggaran-bp-batam-rp565-miliar-1531258457.jpeg" alt="">

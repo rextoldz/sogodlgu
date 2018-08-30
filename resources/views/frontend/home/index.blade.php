@@ -6,7 +6,6 @@
 <div class="container-fluid">    
 	<div class="row">
         <div class="col-sm-2 col-md-2 col-lg-2">
-
     		@include('frontend.home._left')
     	</div>
         <div class="col-sm-7 col-md-7 col-lg-7"> 
