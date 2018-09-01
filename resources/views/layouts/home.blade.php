@@ -1,46 +1,54 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title }}</title>
-    <link rel="shortcut icon" href="{{ asset('images/lgu.png') }}">
+        <title>{{ $title }}</title>
+        <link rel="icon" href="{{ asset('images/lgu.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/w3.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/foundation/foundation.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/foundation/app.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/theme.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/style2.css') }}"/>  
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('bootstrap4/js/bootstrap.min.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/> 
+         <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>  
+        <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script> 
 
-    <!-- Fonts -->
-    
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+        <script src="{{ asset('js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
+  </head>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/w3.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('fontawesome/css/all.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/post-news.css') }}">
-    <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-
-</head>
 <body>
-    <div  id="app"></div>
-        <div class="lgu-photo"></div>
-            <div class="container sgd-header">
-                <div class="row">
-                    <div class="logo"><img src="{{ asset('images/logo.png') }}"></div>
-                    <!-- <div class="page-name">
-                        The official website of the Municipality of Sogod Southern Leyte
-                    </div> -->
+
+<!-- <input id="tmp-link" type="hidden" data-link=""> -->
+    @include('frontend.widgets._accessibility')
+
+<!-- Start of Off Canvas -->
+<div class="off-canvas-wrapper"  id="app">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+<!-- Off Canvas Menu -->
+    @include('frontend.widgets._navbar-right')
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+    @include('frontend.widgets._navbar-left')
+
+<!-- masthead -->
+    <div id="masthead" class="masthead-bg">
+        <div class="container-fluid" style="border-bottom: #db910ab3 solid 9px;">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="logo">  
+                    <img src="{{ asset('images/logo/logo.png') }}" style="width: 438px">
                 </div>
+<<<<<<< HEAD
                 
                 <nav id="navbar" class="navbar navbar-expand-md navbar-light navbar-laravel">
                     <div class="container-fluid">
@@ -116,29 +124,68 @@
                         </div>
                     </div>
                 </nav>
+=======
+>>>>>>> gwt
             </div>
-        <main class="py-6">
-            @yield('content')
-        </main>
-
-</body>
-<footer>
-    <div class="wrapper-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <p class="footer-rights">All rights reserved | sogod.gov.ph</p>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="pst">
+                    @include('frontend.widgets._datetime')
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<script type="text/javascript" src="{{ asset('js/navbar.js') }}"></script>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<!-- masthead end -->
+<!--<div class="container-banner banner-pads">
+        <div class="row">
+            <div class="large-9 columns container-main">
+                <header>
+                    <h1 class="entry-title"></h1>
+                </header>
+            </div>
+        </div>                                          
+    </div> -->
+    <div id="banner">
+        <div class="banner-top"></div>
+    </div>
+
+<!-- main -->
+    <div id="main-content">
+            @yield('content')
+    </div>
+
+<!-- main end -->
+
+<!--Standard Footer-->
+<div id="gwt-standard-footer" style="margin-top: 30px"></div>
+
+<div><a href="#main-nav" id="back-to-top" title="Back to Top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+</a></div>
+
+      </div><!-- off-canvas-content -->
+    </div><!-- off-canvas-wrapper-inner -->
+  </div><!-- off-canvas-wrapper -->
+</div>
+
+    <script type="text/javascript">
+    (function(d, s, id) {
+    var js, gjs = d.getElementById('gwt-standard-footer');
+
+    js = d.createElement(s); js.id = id;
+    js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
+    gjs.parentNode.insertBefore(js, gjs);
+    }(document, 'script', 'gwt-footer-jsdk'));
+    </script>
+
+<!--Standard Footer End-->
+
+    <script src="{{ asset('js/foundation/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('js/foundation/vendor/foundation.min.js') }}"></script>
+    <script src="{{ asset('js/foundation/vendor/what-input.js') }}"></script>
+    <script src="{{ asset('js/theme.js') }}"></script>
+  <!--   <script>
+      $(document).foundation();
+    </script> -->
+
+</body>
+  
 </html>

@@ -1,0 +1,32 @@
+div.gallery {
+    margin: 0 auto;
+    margin-bottom: 19px;;
+    float: left;
+    max-width: 67%;
+  
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border: cadetblue solid 1px;
+}
+
+div.desc {
+  /*  padding: 7px;
+    text-align: center;*/
+    margin-top:5px;
+}
+.event-title{
+	font-size: small;
+	color: darkcyan;
+}
+.event-date{
+	font-family: monospace;
+	color: darkgray;
+}
+.event-venue{
+	font-family: unset;
+	color: darkgray;
+	display: block;
+	font-size: 12px;
+}

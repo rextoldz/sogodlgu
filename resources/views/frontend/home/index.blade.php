@@ -1,6 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
+<<<<<<< HEAD
 	<!-- <script type="text/javascript" src="{{ asset('js/date_time.js') }}"></script> -->
   <!-- 	<div class="cotntainer">
   		<div class="wrapper">
@@ -26,73 +27,27 @@
 			    	@include('frontend.widgets._fbrss')
 				</div>
 		    </div>
+=======
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
+<br>
+<div class="container-fluid">    
+	<div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+    		@include('frontend.home._left')
+>>>>>>> gwt
     	</div>
-    	<br>
-    </div>	
-    <!-- <div class="wrapper1-news">
-	   	<div class="container" style="margin-top: 15px;">
-	   		@include('frontend.home._news')
-	   	</div>
-    </div>
-    <div class="wrapper2">
-    	<div class="container-fluid w3-center">
-    		<h2>Featured Tourist Spots</h2>
+        <div class="col-sm-7 col-md-7 col-lg-7"> 
+            <h6>Welcome to sogod lgu website!</h6>
+	    <!-- <div class="large-7 medium-7 columns"> -->
+    		@include('frontend.home._center')
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+		<!-- <div class="large-3 medium-3 columns"> -->
+    		@include('frontend.home._right')
     	</div>
-    	<div class="container-fluid" style="margin-top: 15px;">
-    		<div class="row">
-    			<div class="col-sm-12 col-md-12 col-lg-12">
-	    			@include('frontend.home._tourist')
-				</div>
-    		</div>
-    	</div>
-    </div> -->
-    <div class="wrapper2">
-		<div class="w3-container">
-			<p class="sgd-title" style="color: gray">{{ _('OFFICIAL SEAL') }}</p>
-		</div>
-		<div class="row" style="margin: 0 auto">
-			<div class="col-sm-4">
-				<img style="width: 80px;height: 80px;" src="{{ asset('images/logo.png') }}">
-			</div>
-			<div class="col-sm-4">
-				<img style="width: 80px;height: 80px;" src="{{ asset('images/logo.png') }}">
-			</div>
-			<div class="col-sm-4">
-				<img style="width: 80px;height: 80px;" src="{{ asset('images/logo.png') }}">
-			</div>
-		</div>
 	</div>
-    <div class="wrapper3">
-    	<div class="container" style="margin-top: 15px;">
-    		<div class="row">
-    			<div class="col-sm-4 col-md-4 col-lg-4">
-	    			<div class="sgd-title">{{ _('PROGRAMS') }}</div>
-	    			<br>
-    				<div class="sgd-body">
-    					<p>Scholarship program</p>
-    				</div>
-				</div>
-    			<div class="col-sm-4 col-md-4 col-lg-4">
-	    			<div class="sgd-title">{{ _('DOWNLOADS') }}</div>
-	    			<br>
-    				<div class="sgd-body">
-    					<a href="">citizen's charter.pdf</a>
-    				</div>
-				</div>
-    			<div class="col-sm-4 col-md-4 col-lg-4">
-	    			<div class="sgd-title">{{ _('CONTACTS') }}</div>
-    				<br>
-    				<div class="sgd-body">
-    					<p>LGU BUILDING</p>
-    					<p> Telephone: (03) 123-456-7</p>
-    					<p>Mobile no.: (63) 923-123-456-7</p>
-    					<br>
-    					<p>RHU</p>
-    					<p> Telephone: (03) 123-456-7</p>
-    					<p>Mobile no.: (63) 923-123-456-7</p>
-    				</div>
-				</div>
-    		</div>
-    	</div>
-    </div>
+</div>
+<div id="news" style="margin-top:50px">
+    @include('frontend.home._news')
+</div>
 @endsection
