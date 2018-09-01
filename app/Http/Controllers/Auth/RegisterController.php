@@ -66,9 +66,7 @@ class RegisterController extends Controller
     {
         $admin = true;
         $fullname = $data['firstname'].' '. $data['lastname'];
-        var_dump($fullname);
-
-        exit();
+        
         return User::create([
             'isAdmin'=> $admin,
             'name' => $fullname,

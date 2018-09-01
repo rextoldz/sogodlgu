@@ -39,5 +39,3 @@ Route::prefix('events')->group(function () {
 // 	Route::put('{id}/{title}', 'newsController@update');
 // });
 Auth::routes();
-
-Route::get('admin', 'Admin\DashboardController@index')->middleware('admin');
