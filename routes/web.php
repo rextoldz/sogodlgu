@@ -39,3 +39,12 @@ Route::prefix('events')->group(function () {
 // 	Route::put('{id}/{title}', 'newsController@update');
 // });
 Auth::routes();
+
+Route::prefix('admin')->group(function() {
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/register', 'Auth\AdminRegisterController@showRegistrationForm')->name('admin.register');
+    Route::post('/register', 'Auth\AdminRegisterController@register')->name('admin.register.submit');
+    Route::get('/', 'Admin\AdminController@index')->name('admin');
+    Route::get('/verify-user/{code}', 'Auth\AdminRegisterController@activateUser')->name('activate.user');
+}); 
