@@ -41,7 +41,7 @@ class GovernmentController extends Controller
             // $crud->telnumber = $faker->lexify('????????');
             // $crud->save();
 
-            $barangays = Barangay::paginate(15);
+        $barangays = Barangay::orderBy('name')->paginate(15);
 
         return view('frontend/government/barangay',[
         	'page' => 'Government',

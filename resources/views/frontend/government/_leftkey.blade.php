@@ -1,14 +1,12 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home/events.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/home/ribbon.css') }}">
 <div class="callout secondary">
 	<h5>Key<small>Officials</small></h5>
 		@include('frontend.widgets._sharethis')		
 	<hr>
-    
-    <div class="w3-panel w3-red-dark">
-      <h5 style="padding-top: 8px;">Mayor & Vice Mayor</h5>
+    <div class="ribbon2 both_ribbon2">
+        <h2>Mayor & Vice Mayor</h2>
     </div>
-    <hr>
-
 	<div class="w3-panel">
     	<img src="{{ asset('images/officials/mayor.jpg') }}" class="keyofficials-img" alt="Cinque Terre">
     	<div class="keyofficials-card">
@@ -31,11 +29,9 @@
             <p>abc@abc.com</p>
         </div>
     </div>
-
-    <div class="w3-panel w3-red-dark">
-      <h5 style="padding-top: 8px;">Sangguniang Bayan</h5>
+    <div class="ribbon2 both_ribbon2">
+        <h2>Sangguniang Bayan</h2>
     </div>
-    <hr>
     <div class="w3-panel">
         <img src="{{ asset('images/officials/mayor.jpg') }}" class="keyofficials-img" alt="Cinque Terre">
         <div class="keyofficials-card">

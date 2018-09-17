@@ -35,9 +35,7 @@ Route::prefix('about')->group(function () {
 Route::prefix('events')->group(function () {
     Route::get('/', 'Frontend\EventsController@index')->name('events');
 });
-// Route::prefix('news')->group(function () {
-// 	Route::put('{id}/{title}', 'newsController@update');
-// });
+
 Auth::routes();
 
 Route::prefix('admin')->group(function() {
@@ -45,6 +43,30 @@ Route::prefix('admin')->group(function() {
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/register', 'Auth\AdminRegisterController@showRegistrationForm')->name('admin.register');
     Route::post('/register', 'Auth\AdminRegisterController@register')->name('admin.register.submit');
-    Route::get('/', 'Admin\AdminController@index')->name('admin');
     Route::get('/verify-user/{code}', 'Auth\AdminRegisterController@activateUser')->name('activate.user');
+
+    Route::get('/', 'Admin\AdminController@index')->name('admin');
+
+    Route::get('/settings/account', 'Admin\SettingsController@account')->name('admin.settings.account');
+
 }); 
+
+Route::prefix('admin')->group(function() {
+   
+    Route::resource('/cruds/events', 'Admin\EventsController', [
+      'except' => ['edit', 'show', 'store']
+    ]);    
+    Route::resource('/cruds/profile', 'Admin\ProfileController', [
+      'except' => ['edit', 'show', 'store']
+    ]);
+    Route::resource('/cruds/barangay', 'Admin\BarangayController', [
+      'except' => ['edit', 'show']
+    ]);
+
+
+    Route::get('/cruds/changepwd/{id}', 'Admin\ProfileController@updatepwd')->name('password.update');
+    Route::get('/settings', 'Admin\SettingsController@showForm')->name('admin.settings');
+    Route::get('/events', 'Admin\EventsController@showForm')->name('admin.events');
+    Route::get('/barangay', 'Admin\BarangayController@showForm')->name('admin.barangay');
+
+});

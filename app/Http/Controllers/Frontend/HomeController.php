@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         return view('frontend/home/index',[
         	'page' => 'Home',
-        	'title' =>'Welcome to Sogod LGU website.'
+        	'title' =>'Sogod Southern Leyte LGU website.'
         ]);
     }
 
