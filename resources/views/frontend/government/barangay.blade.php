@@ -12,12 +12,9 @@
 </div>
 <br>
 
-<div class="container-fluid">    
+<div class="container">    
     <div class="row">
-        <div class="col-sm-2 col-md-2 col-lg-2">
-            @include('frontend.government._leftbrgy')
-        </div>
-        <div class="col-sm-7 col-md-7 col-lg-7"> 
+        <div class="col-sm-9 col-md-9 col-lg-9"> 
             @include('frontend.government._centerbrgy')
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3">

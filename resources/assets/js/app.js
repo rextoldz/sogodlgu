@@ -19,6 +19,7 @@ window.Vue = require('vue');
 Vue.component('featuredevents', require('./components/FeaturedEvents.vue'));
 Vue.component('announcements', require('./components/Announcements.vue'));
 
+
 const app = new Vue({
     el: '#app-events'
 });

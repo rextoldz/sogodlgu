@@ -1,9 +1,16 @@
+<style type="text/css">
+    .pstbg{
+        background-color: #e4b052;
+        padding: 6px;
+        color: white;
+    }
+</style>
 <br>
 <div class="callout secondary" style="border: 1px solid rgba(255, 255, 255, 0.25);">
      <div id="pst" class="text-center">
         <div id="pst-container" style="display:block;">
             <div style="font-style:Roboto; color:#333;">
-                <div style="font-size:1rem;"><b>Philippine Standard Time</b></div>
+                <div style="font-size:1rem;" class="pstbg"> <b>Philippine Standard Time</b></div>
                 <div style="font-size:0.875rem;">
                     <span id="pst-date"></span>
                     <span id="pst-time"></span>

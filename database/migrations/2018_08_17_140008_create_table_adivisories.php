@@ -15,11 +15,10 @@ class CreateTableAdivisories extends Migration
     {
         Schema::create('advisories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('posted'); 
-            $table->string('photo'); 
+            $table->string('photo')->nullable(); 
             $table->string('title');
             $table->text('descriptions');
-            $table->integer('hits')->default(0); 
+            $table->string('published_by');
             $table->timestamps();
         });
     }

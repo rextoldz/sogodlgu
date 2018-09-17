@@ -11,8 +11,8 @@
                   <th>Contact number</th>
                 </tr>
                 @foreach ($barangays as $barangay)
-                <tr>
-                  <td><a target="_blank" href="{{ route('showbarangay',['id'=>$barangay->id, 'barangay' => $barangay->name]) }}">{{ $barangay->name }}</a></td>
+                <tr style="text-transform: capitalize;">
+                  <td><a href="{{ route('showbarangay',['id'=>$barangay->id, 'barangay' => $barangay->name]) }}">{{ $barangay->name }}</a></td>
                   <td>{{ $barangay->captain }}</td>
                   <td>{{ $barangay->cellnumber }}</td>
                 </tr>

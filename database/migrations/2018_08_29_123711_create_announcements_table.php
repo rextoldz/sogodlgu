@@ -19,6 +19,7 @@ class CreateAnnouncementsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('posted_by')->nullable();
+            $table->string('published_by');
             $table->timestamps();
         });
     }

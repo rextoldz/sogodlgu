@@ -25,15 +25,15 @@ class EventsController extends Controller
      */
     public function create()
     {
-            $crud = new Events();
-            $crud->photo ='anniv.png';
-            $crud->title = 'Sogod Founding Anniversary Concert';
-            $crud->descriptions = 'secret';
-            $crud->venue = 'Sogod Covered Court';
-            $crud->date = date('04/02/2018');
-            $crud->time = time('h:i:s');
+            // $crud = new Events();
+            // $crud->photo ='anniv.png';
+            // $crud->title = 'Sogod Founding Anniversary Concert';
+            // $crud->descriptions = 'secret';
+            // $crud->venue = 'Sogod Covered Court';
+            // $crud->date = date('04/02/2018');
+            // $crud->time = time('h:i:s');
 
-            $crud->save();
+            // $crud->save(); 
     }
 
     /**
@@ -44,7 +44,14 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+            $events = new Events();
+            $events->photo = $request->input('photo');
+            $events->title = $request->input('title');
+            $events->descriptions = $request->input('descriptions');
+            $events->venue =  $request->input('venue');
+            $events->date = date('04/02/2018');
+            $events->time = time('h:i:s');
+            $events->save();
     }
 
     /**
