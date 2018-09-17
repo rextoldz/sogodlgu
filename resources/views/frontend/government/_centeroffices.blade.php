@@ -11,14 +11,13 @@
                 </tr>
                
                 <tr>
-                  <td><a target="_blank" href="{{ route('showbarangay',['id'=>$barangay->id, 'barangay' => $barangay->name]) }}"></a></td>
+                  <td><a target="_blank" href=""></a></td>
                   <td></td>
                   <td></td>
                 </tr>
 
         </table>
         <div class="w3-right">
-            {{ $barangays->links('vendor.pagination.bootstrap-4') }}
         </div>
     </div>
 </div>

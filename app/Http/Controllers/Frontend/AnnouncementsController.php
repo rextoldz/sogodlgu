@@ -13,6 +13,7 @@ class AnnouncementsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         return Announcements::all()->jsonSerialize();

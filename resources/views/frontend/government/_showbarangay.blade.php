@@ -13,13 +13,9 @@
     </nav>
 </div>
 <br>
-<div class="container-fluid">    
+<div class="container">    
     <div class="row">
-        <div class="col-sm-2 col-md-2 col-lg-2">
-            @include('frontend.government._leftbrgy')
-        </div>
-        <div class="col-sm-7 col-md-7 col-lg-7"> 
-
+        <div class="col-sm-9 col-md-9 col-lg-9"> 
             <div class="callout secondary">
                 <h5>Barangay<small>Profile</small></h5>
                 @include('frontend.widgets._sharethis')     

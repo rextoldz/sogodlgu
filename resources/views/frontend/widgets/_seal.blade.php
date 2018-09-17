@@ -2,6 +2,6 @@
 <a href="{{ route('home') }}">
 <img src="{{ asset('images/logo.png') }}" alt="Transparency Seal" title="Transparency Seal" style="width:141px;" />
 </a>
-<a href="#">
+<!-- <a href="#">
 <img src="{{ asset('images/logo2.jpg') }}" alt="Transparency Seal" title="Transparency Seal" style="width:142px;" />
-</a>
+</a> -->

@@ -15,10 +15,12 @@ class CreateTableBarangay extends Migration
     {
         Schema::create('barangays', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('photo')->nullable();
+            $table->string('name')->unique();
             $table->string('captain');
             $table->string('cellnumber');
             $table->string('telnumber');
+            $table->string('published_by');
             $table->timestamps();
         });
     }

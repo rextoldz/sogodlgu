@@ -63,8 +63,8 @@ class AdminRegisterController extends Controller
 
         $validatedData = $request->validate([
             'email'     => 'required|string|email|max:255|unique:admins',
-            'username'  => 'required|string|max:255|unique:admins',
-            'password'  => 'required|string|min:6|confirmed',
+            'username'  => 'required|string|min:6|max:255|unique:admins',
+            'password'  => 'required|string|min:8|confirmed',
         ]);
         try {
             $validatedData['name']              = $request->input('firstname').' '.$request->input('lastname');
@@ -94,7 +94,7 @@ class AdminRegisterController extends Controller
             $admin->status          = 1;
             $admin->activation_code = null;
             $admin->save();
-            AdminLogin()->login($admin);
+            // AdminLogin()->login($admin);
         } catch (\Exception $exception) {
             logger()->error($exception);
             return "Whoops! something went wrong.";
