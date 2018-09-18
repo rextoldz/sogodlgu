@@ -1,7 +1,9 @@
 .title-h6-d{
-    color: cadetblue;
+    color: white;
     border: 1px #e7b60a dashed;
     padding: 11px;
+    background-color: #a23a0d;
+    font-size: 0.9em;
 }
 .downloads-link{
     color: darkblue;
@@ -96,14 +98,16 @@
     line-height: 7px;
 }
 .keyofficials-img{
-    max-width: 110px;
+  /*  max-width: 110px;
     min-width: 114px;
     position: relative;
-    bottom: 54px;
+    bottom: 12px;
+    margin: 0 auto;*/
+    height: 213px;
 }
-._Keyright{
+/*._Keyright{
     margin-left: 132px;
-}
+}*/
 .w3-red-dark{
     background-color: #c7c7c7;
     color: #605b5b;

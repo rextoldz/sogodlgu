@@ -2,19 +2,25 @@
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
+<div id="banner">
+    <div class="banner-top"></div>
+</div>
 <br>
 <div class="container-fluid">    
     <div class="row">
         <div class="col-sm-8 col-md-8 col-lg-8"> 
             @include('frontend.home._mayormsg')      
-            @include('frontend.tourism._touristspot')      
+            @include('frontend.tourism._touristspot')   
+           
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4">
             <div class="follow">
                 @include('frontend.widgets._followus')
             </div>
-            @include('frontend.events._events')
-            @include('frontend.widgets._services')
+            @include('frontend.events._events') 
+            <div style="clear: both;">
+                @include('frontend.widgets._services')
+            </div> 
         </div>
     </div>
 </div>

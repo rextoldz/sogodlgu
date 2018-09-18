@@ -1,26 +1,21 @@
 @extends('layouts.home')
 
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
-<div class="container-fluid">
-    <nav aria-label="breadcrumb">
-     <ol class="breadcrumb">
-            <li class="breadcrumb-item">{{ $page }}</li>
-            <li class="breadcrumb-item"><a href="{{ url()->current() }}">{{ $breadcrumb }}</a></li>
-        </ol>
-    </nav>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/followus.css') }}">
+<div id="banner">
+    <img src="{{ asset('images/banner/offices.jpg')}}" style="width: 100%">
 </div>
+<ul id="breadcrumb">
+  <li><a href="#">{{ $page }}</a></li>
+  <li><a href="{{ route('keyofficials') }}">{{ $breadcrumb }}</a></li>
+</ul>
 <br>
-
 <div class="container-fluid">    
     <div class="row">
-        <div class="col-sm-2 col-md-2 col-lg-2">
-            @include('frontend.government._leftbrgy')
+        <div class="col-sm-8 col-md-8 col-lg-8"> 
+            @include('frontend.government._leftoffices')
         </div>
-        <div class="col-sm-7 col-md-7 col-lg-7"> 
-            @include('frontend.government._centeroffices')
-        </div>
-        <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="col-sm-4 col-md-4 col-lg-4">
             @include('frontend.government._rightbrgy')
         </div>
     </div>

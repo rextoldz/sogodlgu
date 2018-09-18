@@ -1,9 +1,5 @@
 <style type="text/css">
-    .pstbg{
-        background-color: #e4b052;
-        padding: 6px;
-        color: white;
-    }
+    .pstbg{background-color: #e4b052;padding: 6px;color: black;}
 </style>
 <br>
 <div class="callout secondary" style="border: 1px solid rgba(255, 255, 255, 0.25);">

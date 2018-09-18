@@ -9,47 +9,49 @@
 </style> -->
 <style type="text/css">
     .ul-events{list-style: none;position: relative;left: -19px;width: 100%;}
-    .events-container img{width: 50%; height: 100%;float: left;padding-right: 10px;}
+    .ul-events tr.venue{font-size: 0.8em;}
+    .events-container img{width: 100%; height: auto;float: left;padding-right: 10px;}
+    .events-container img:hover{width: 500px}
     .events-container{border: aliceblue 2px solid;padding: 13px;}
-    .events-container h6{color: #a90423b8};
+    .events-container h6{color: #a90423b8;line-height: 1.2;}
 </style>
 <script type="text/javascript" src="{{ asset('js/news.js') }}"></script>
-<h6 class="title-h6-d">Upcoming<small>Events</small></h6>
+<h6 class="title-h6-d">Upcoming Events</h6>
   <ul class="ul-events">
     <li>
-      <div class="events-container">
-        <a href="">
-            <img src="{{ asset('images/events/2.jpg') }}">
-            <span>
-                <h6>Libreng Bakuna 2</h6>
-                <p>Southern Leyte State University Campus</p>
-            </span>
-        </a>
-        <span>January 20,2018</span>
-      </div>
+        <table style="border: none;" class="events-container">
+            <tr>
+                <td>
+                    <img src="{{ asset('images/events/3.jpg') }}">  
+                </td>
+                <td style="width: 166px;"> 
+                    <a href="">
+                        <h6>Rural Impact Sourcing Technical Training</h6>
+                    </a>
+                </td>
+            </tr>
+            <tr class="venue">
+                <td>Sogod Municipal Building</td>
+                <td>September 14-25, 2018</td>
+            </tr>
+        </table>
     </li>
     <li>
-      <div class="events-container">
-        <a href="">
-            <img src="{{ asset('images/events/2.jpg') }}">
-            <span>
-                <h6>Miss Philippines Earth-Sogod Southern Leyte 2015</h6>
-                <p>Sogod Southern Leyte</p>
-            </span>
-        </a>
-        <span>January 20,2018</span>
-      </div>
+        <table style="border: none;" class="events-container">
+            <tr>
+                <td>
+                    <img src="{{ asset('images/events/2.jpg') }}">  
+                </td>
+                <td style="width: 166px;"> 
+                    <a href="">
+                        <h6>(Sample) Miss Philippines Earth-Sogod Southern Leyte 2015</h6>
+                    </a>
+                </td>
+            </tr>
+           <tr class="venue">
+                <td>venue</td>
+                <td>date</td>
+            </tr>
+        </table>
     </li>
-    <li>
-      <div class="events-container">
-        <a href="">
-            <img src="{{ asset('images/events/2.jpg') }}">
-            <span>
-                <h6>Miss Philippines Earth-Sogod Southern Leyte 2015</h6>
-                <p>Sogod Southern Leyte</p>
-            </span>
-        </a>
-        <span>January 20,2018</span>
-      </div>
-    </li>   
 </ul>

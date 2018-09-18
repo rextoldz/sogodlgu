@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home/barangay.css') }}">
 <div class="callout secondary">
-	<h5>45<small>Barangays</small></h5>
+	<!-- <h5>45<small>Barangays</small></h5> -->
 	@include('frontend.widgets._sharethis')		
 	<hr>
     <div class="w3-container">

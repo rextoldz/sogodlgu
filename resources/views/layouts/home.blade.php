@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/> 
         <link rel="stylesheet" href="{{ asset('css/home/ribbon.css') }}"/> 
+        <link rel="stylesheet" href="{{ asset('css/home/breadcrumbs.css') }}"/> 
         <!-- <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>   -->
         <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bootstrap4/js/bootstrap.min.js') }}"></script> 
@@ -52,7 +53,7 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <div class="pst">
-                    @include('frontend.widgets._datetime')
+                    <!-- @include('frontend.widgets._datetime') -->
                 </div>
             </div>
         </div>
@@ -67,13 +68,11 @@
             </div>
         </div>                                          
     </div> -->
-    <div id="banner">
-        <div class="banner-top"></div>
-    </div>
+    
     
 <!-- main -->
     <div id="main-content">
-            @yield('content')
+        @yield('content')
     </div>
 
 <!-- main end -->

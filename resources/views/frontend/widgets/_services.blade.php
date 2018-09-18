@@ -4,7 +4,7 @@
 #leftsideMenu ul li a:hover {background-color: lightgreen;transition: 0.5s;padding-left: 30px;padding-right: 10px;}
 
 </style>
-<h6 class="title-h6-d">Services<small>&Programs</small></h6>
+<h6 class="title-h6-d">Services & Programs</h6>
 <div class="" id="leftsideMenu">	
 	  <ul style="list-style-type:none;margin-left: 0">
 	    <li><a href="#">NSO Late Registration</a></li>
