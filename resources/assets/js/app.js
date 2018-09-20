@@ -16,7 +16,13 @@ window.Vue = require('vue');
  */
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('featuredevents', require('./components/FeaturedEvents.vue'));
+Vue.component('announcements', require('./components/Announcements.vue'));
 
-// const app = new Vue({
-//     el: '#app'
-// });
+
+const app = new Vue({
+    el: '#app-events'
+});
+const app1 = new Vue({
+    el: '#app-announcements'
+});
